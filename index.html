@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposals Presentation Hub · Starlit</title>
+  <meta name="description" content="Interactive proposal presentations portal built for GitHub Pages with luxury visual aesthetics.">
+  <link rel="stylesheet" href="css/theme.css">
+  <style>
+    body {
+      overflow-y: auto !important;
+      background: radial-gradient(circle at 50% 0%, #1E1E1E 0%, #0F0F0F 70%, #080808 100%);
+    }
+
+    .hub-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 30px;
+    }
+
+    .hub-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .hub-badge {
+      display: inline-block;
+      border: 1px solid var(--color-gold);
+      color: var(--color-gold);
+      padding: 6px 18px;
+      border-radius: 20px;
+      font-family: var(--font-subheading);
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .hub-title {
+      font-family: var(--font-heading);
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--color-text-main);
+      letter-spacing: 3px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .hub-subtitle {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .proposals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .proposal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-gold);
+      border-radius: 12px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proposal-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+    }
+
+    .proposal-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-gold);
+      border-color: var(--color-gold-light);
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .client-tag {
+      font-family: var(--font-heading);
+      font-size: 0.85rem;
+      color: var(--color-gold);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .status-badge {
+      background: rgba(191, 159, 90, 0.15);
+      color: var(--color-gold-light);
+      border: 1px solid var(--border-gold);
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .proposal-name {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      color: var(--color-text-main);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .proposal-desc {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .authors-info {
+      font-size: 0.85rem;
+      color: var(--color-text-dim);
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 15px;
+      margin-bottom: 20px;
+    }
+
+    .btn-launch {
+      background: var(--color-gold);
+      color: #171717;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 6px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: var(--transition-smooth);
+      width: 100%;
+    }
+
+    .btn-launch:hover {
+      background: var(--color-gold-light);
+      box-shadow: var(--shadow-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hub-container">
+    <header class="hub-header">
+      <div class="hub-badge">Interactive Pitch Decks & Proposals</div>
+      <h1 class="hub-title">STARLIT PROPOSALS</h1>
+      <p class="hub-subtitle">
+        High-impact digital strategy & growth presentations crafted for clients. Designed for seamless viewing and presentation on GitHub Pages.
+      </p>
+    </header>
+
+    <main class="proposals-grid">
+      <!-- Proposal Card 1: 10X Concierge -->
+      <div class="proposal-card">
+        <div>
+          <div class="card-meta">
+            <span class="client-tag">10X CONCIERGE</span>
+            <span class="status-badge">READY TO PRESENT</span>
+          </div>
+          <h2 class="proposal-name">Digital Growth & Strategy Proposal</h2>
+          <p class="proposal-desc">
+            Complete digital rebuild, SEO authority strategy anchored on Milan-Como-Lugano, conversion optimization, and targeted Google Ads campaign plan.
+          </p>
+        </div>
+
+        <div>
+          <div class="authors-info">
+            <strong>Client:</strong> Simone Tomaro<br>
+            <strong>Team:</strong> Amir Aghaie (SEO & Ads) & Fatemeh Mohseni (Design & Build)
+          </div>
+          <a href="10x-concierge/index.html" class="btn-launch">
+            <span>Open Presentation</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
